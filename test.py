@@ -31,6 +31,6 @@ for i in range(length / side):
         for image in values:
             if abs(mean - values[image][0]) < least:
                 best_pic, least = values[image][1], abs(mean - values[image][0])
-                print least
+        print i, j
         matrix[side * i: side * (i + 1), side * j: side * (j + 1)] = best_pic
 imshow(matrix)
